@@ -1,0 +1,150 @@
+.get-catalog {
+  width: 100%;
+  max-width: 738px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 4px;
+  padding: 21px 20px 42px;
+}
+.get-catalog__pic {
+  overflow: hidden;
+  margin: 0 0 26px;
+  border-radius: 4px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+.get-catalog__wrap {
+  padding: 0 22px;
+
+  >div {
+
+    &:first-child {
+      margin: 0 0 30px;
+    }
+
+  }
+
+}
+.get-catalog__title {
+  margin: 0 0 22px;
+  font-family: ProximaNova-Black;
+  font-size: 20px;
+  line-height: 20px;
+  color: #373737;
+  letter-spacing: 1.91px;
+  text-transform: uppercase;
+}
+.get-catalog__list {
+
+  li {
+    position: relative;
+    padding-left: 10px;
+    font-family: Roboto-Medium;
+    font-size: 16px;
+    color: rgba(78, 78, 78, 0.8);
+    line-height: 22px;
+
+    &:after {
+      position: absolute;
+      top: 9px;
+      left: 2px;
+      width: 3px;
+      height: 3px;
+      border-radius: 100%;
+      background: rgba(78, 78, 78, 0.8);
+      content: '';
+    }
+  }
+
+}
+.get-catalog__subscribe {
+
+  input[type=email] {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(28, 28, 28, 0.51);
+    border: 2px solid #D1D1D1;
+    border-radius: 4px;
+    -webkit-transition: border 0.3s, color 0.3s;
+    transition: border 0.3s, color 0.3s;
+    text-align: center;
+
+    &:focus {
+      border-color: #373737;
+    }
+
+  }
+  .btn {
+    width: 119px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .get-catalog {
+
+  }
+  .get-catalog__wrap {
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include flex-direction();
+    @include flex-wrap(wrap);
+
+    >div {
+      width: 38%;
+      padding-left: 37px;
+
+      &:first-child {
+        width: 61%;
+        padding: 0;
+        margin: 0;
+      }
+
+    }
+
+  }
+  .get-catalog__title {
+    margin: 0 0 22px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .get-catalog__subscribe {
+
+    form {
+      @include flexbox();
+      @include justify-content(space-between);
+      @include align-items();
+      @include flex-direction();
+      @include flex-wrap(wrap);
+    }
+
+
+    input[type=email] {
+      width: 265px;
+      margin: 0;
+    }
+    .btn {
+      width: 100px;
+    }
+
+  }
+
+}
+

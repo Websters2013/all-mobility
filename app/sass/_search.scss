@@ -1,0 +1,127 @@
+.search {
+  display: none;
+}
+
+
+@media (min-width: $desktop) {
+
+  .search {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 279px;
+    right: 450px;
+    -webkit-transition: opacity 0.3s, visibility .3s ease;
+    transition: opacity 0.3s, visibility .3s ease;
+
+    input[type=search] {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      height: 48px;
+      border: none;
+      padding: 13px 110px 13px 10px;
+      background: #fff;
+      box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.23);
+      border-radius: 2px;
+      font-family: Roboto-Regular;
+      font-size: 16px;
+      color: #1C1C1C;
+      -webkit-appearance: none;
+      -webkit-transition: background 0.3s;
+      transition: background 0.3s;
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100px;
+      background: #F47920;
+      border: none;
+      border-radius: 0 2px 2px 0;
+      font-family: ProximaNova-Bold;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      -webkit-transition: background 0.3s;
+      transition: background 0.3s;
+
+
+      &:hover {
+        background: rgb(234, 84, 56);
+      }
+
+    }
+
+  }
+  .search__result {
+    opacity: 0;
+    visibility: hidden;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items();
+    @include flex-direction();
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 780px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-shadow: 4px 4px 2px 0 rgba(2,2,0,0.15);
+    border-radius: 4px;
+
+    >div {
+      width: 61.6%;
+
+      &:first-child {
+        width: 38.4%;
+      }
+
+    }
+
+  }
+  .search__found {
+    padding-top: 13px;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    line-height: 18px;
+    color: #444444;
+
+    li {
+      padding: 10px 23px;
+
+      ul {
+        padding: 3px 0 0;
+        margin: 0 0 -9px;
+
+        li {
+          padding: 10px 15px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+@media (min-width: $desktop-hd) {
+
+  .search {
+    left: 279px;
+    right: 559px;
+
+    input[type=search] {
+      padding: 13px 145px 13px 10px;
+    }
+    button {
+      width: 131px;
+    }
+
+  }
+
+}
+

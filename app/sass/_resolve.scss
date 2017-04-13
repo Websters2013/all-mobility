@@ -1,0 +1,46 @@
+.resolve {
+  padding: 30px 25px 23px 28px;
+  margin: 0 0 19px;
+  background: #868686;
+  border-radius: 6px;
+  text-align: center;
+
+  .btn {
+    width: 100%;
+  }
+
+}
+.resolve__title {
+  position: relative;
+  margin: 9px 12px 15px;
+  font-family: ProximaNova-Bold;
+  line-height: 29px;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.resolve__call {
+  margin: 0 0 21px;
+
+  span {
+    display: block;
+    margin: 0 0 10px;
+    font-family: ProximaNova-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  a {
+    font-family: ProximaNova-Bold;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .resolve {
+
+  }
+
+}
+

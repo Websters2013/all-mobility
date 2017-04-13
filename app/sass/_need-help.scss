@@ -1,0 +1,50 @@
+.need-help {
+  padding: 31px 25px 28px 28px;
+  margin: 0 0 19px;
+  background: #FFFFFF;
+  border-radius: 4px;
+
+  .btn {
+    width: 100%;
+  }
+
+}
+.need-help__title {
+  position: relative;
+  padding: 0 0 0 61px;
+  margin: 0 0 18px;
+  font-family: ProximaNova-Bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4E4E4E;
+  text-transform: uppercase;
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #F47920;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .need-help__title {
+    padding: 0 0 0 50px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+}
+@media (min-width: $desktop-hd)  {
+
+  .need-help__title {
+    padding: 0 0 0 61px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+}

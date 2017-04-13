@@ -1,0 +1,44 @@
+.check-out {
+  padding: 13px 0 0;
+}
+.check-out__map {
+  position: relative;
+  height: 329px;
+  background: #000;
+
+  .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 37px;
+    height: 48px;
+    font-size: 15px;
+    min-width: 251px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .check-out {
+    margin: 0 0 25px;
+    padding: 27px 0 0;
+    background: #FFFFFF;
+    border-radius: 4px;
+
+    .site__title-link {
+      right: 50px;
+    }
+
+    .btn {
+      display: none;
+    }
+
+  }
+  .check-out__map {
+    height: 230px;
+  }
+
+}
+

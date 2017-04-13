@@ -1,0 +1,33 @@
+.watch-video {
+  position: relative;
+  padding: 32px 27px 30px;
+  margin: 0 0 19px;
+  min-height: 266px;
+  background: url("../pic/girl.jpg") no-repeat top center;
+  background-size: cover;
+  border-radius: 4px;
+
+  .btn {
+    position: absolute;
+    left: 27px;
+    right: 27px;
+    bottom: 27px;
+  }
+
+}
+.watch-video__title {
+  margin: 0 0 18px;
+  font-family: ProximaNova-Bold;
+  font-size: 24px;
+  color: #4E4E4E;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop) {
+
+  .watch-video {
+
+  }
+
+}
+
