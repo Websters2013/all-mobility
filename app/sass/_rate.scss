@@ -1,0 +1,40 @@
+.rate {
+ margin: 0 0 21px;
+}
+.rate__star {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 147px;
+  height: 25px;
+  background: url("../img/star-non-active.png") repeat-x;
+  background-position: top left;
+  background-size: contain;
+
+  div {
+    height: 25px;
+    background: url("../img/star.png") repeat-x;
+    background-position: top left;
+    background-size: contain;
+  }
+
+}
+.rate__reviews {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px 0 0 10px;
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  color: #4E4E4E;
+  line-height: 20px;
+}
+
+@media (min-width: $desktop) {
+
+  .rate {
+
+
+  }
+
+}
+

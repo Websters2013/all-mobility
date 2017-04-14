@@ -45,8 +45,6 @@
 
   .main-text {
     padding: 38px 21px 44px 13px;
-    background: #FFFFFF;
-    border-radius: 4px;
     @include flexbox();
     @include justify-content();
     @include align-items();

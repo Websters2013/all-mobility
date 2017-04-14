@@ -1,15 +1,13 @@
 .advantages {
-  padding: 28px 25px 17px;
-  margin: 0 0 19px;
-  background: #FFFFFF;
-  border-radius: 4px;
+  padding: 24px 24px 7px;
+  background: #F2F2F2;
   font-family: ProximaNova-Semibold;
-  font-size: 18px;
+  font-size: 16px;
   color: #373737;
-  line-height: 18px;
+  line-height: 17px;
 }
 .advantages__title {
-  margin: 0 0 29px;
+  margin: 0 0 25px;
   font-family: ProximaNova-Bold;
   font-size: 22px;
   color: #F47920;
@@ -19,11 +17,11 @@
 
   li {
     position: relative;
-    padding: 0 17px 0 67px;
-    margin: 0 0 11px;
-    min-height: 46px;
+    padding: 0 17px 0 60px;
+    margin: 0 0 19px;
+    min-height: 34px;
 
-    &:after {
+    span {
       position: absolute;
       top: -1px;
       left: 0;
@@ -31,73 +29,25 @@
       height: 46px;
       background-position: top center;
       background-repeat: no-repeat;
-      content: '';
-    }
-
-    &:nth-child(1) {
-
-      &:after {
-        background-image: url("../img/10938-200.png");
-        background-size: 32px 32px;
-      }
-
-    }
-    &:nth-child(2) {
-
-      &:after {
-        background-image: url("../img/Ecommerce-Free-Shipping-icon.png");
-        background-size: 38px 30px;
-      }
-
-    }
-    &:nth-child(3) {
-
-      &:after {
-        background-image: url("../img/Credit_Card_Payment_Safe_Secure_Shopping_Ecommerce_Pay-512.png");
-        background-size: 46px 46px;
-      }
-
-    }
-    &:nth-child(4) {
-
-      &:after {
-        background-image: url("../img/icon-innovative-research.png");
-        background-size: 30px 35px;
-      }
-
-    }
-    &:nth-child(5) {
-
-      &:after {
-        background-image: url("../img/MAW_icon-vector-blue_14_geo_125x125.png");
-        background-size: 23px 36px;
-      }
+      background-size: 50%;
+      text-align: center;
 
     }
 
   }
 
 }
-.advantages_mob {
-  padding: 24px 24px 7px;
-  margin: 0;
-  background: #F2F2F2;
-  font-size: 16px;
-  line-height: 17px;
+.advantages_2 {
+  padding: 24px 24px 14px;
 
-  .advantages__title {
-    margin: 0 0 25px;
-  }
   .advantages__list {
+    color: #F47920;
 
     li {
-      padding: 0 17px 0 60px;
-      margin: 0 0 19px;
-      min-height: 34px;
+      margin: 0 0 25px;
 
-      &:after {
+      span {
         top: 50%;
-        background-position: center;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
       }
@@ -110,35 +60,89 @@
 
 @media (min-width: $phone-mini) {
 
-  .advantages_mob {
+  .advantages {
     padding: 24px 24px 17px;
-    background: #F2F2F2;
     font-size: 16px;
     line-height: 17px;
+  }
+  .advantages__list {
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include flex-direction();
+    @include flex-wrap(wrap);
 
-    .advantages__list {
-      @include flexbox();
-      @include justify-content();
-      @include align-items();
-      @include flex-direction();
-      @include flex-wrap(wrap);
-
-      li {
-        width: 50%;
-      }
-
+    li {
+      width: 50%;
     }
+
+  }
+  .advantages_2 {
+    padding: 24px 24px 14px;
   }
 
 }
 @media (min-width: $desktop) {
 
+  .advantages {
+    padding: 28px 25px 17px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin: 0 0 19px;
+    font-size: 18px;
+    line-height: 18px;
+  }
   .advantages__title {
     margin: 0 0 26px;
     line-height: 22px;
   }
   .advantages_mob {
     display: none;
+  }
+  .advantages__list {
+
+    li {
+      width: 100%;
+      padding: 0 17px 0 67px;
+      margin: 0 0 11px;
+      min-height: 46px;
+
+      span {
+        top: -1px;
+        left: 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        background-position: top center;
+      }
+
+    }
+
+  }
+
+  .advantages_2 {
+    padding: 41px 0 0;
+
+    .advantages__list {
+      font-family: ProximaNova-Semibold;
+      font-size: 16px;
+      color: #F47920;
+      line-height: 18px;
+
+      li {
+        width: 49%;
+        padding: 0 14px 0 59px;
+        margin: 0 0 27px;
+
+        span {
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+      }
+
+    }
+
   }
 
 }

@@ -18,7 +18,10 @@
 }
 .featured-product__pic {
   position: relative;
-  margin: 0 0 5px;
+  height: 124px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
   img {
     width: 84%;

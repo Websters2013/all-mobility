@@ -11,7 +11,7 @@
   @include flex-wrap(wrap);
 
   >div {
-    width: 50%;
+    width: 100%;
     margin: 0 0 12px;
     padding: 0 7px;
     text-align: center;
@@ -25,7 +25,7 @@
   width: 100%;
   max-width: 183px;
   height: 100%;
-  padding: 11px 9px 71px;
+  padding: 11px 9px 37px;
   background: #FFFFFF;
   border: 2px solid #DDDDDD;
   box-shadow: 3px 3px 4px 0 rgba(0,0,0,0.10);
@@ -39,7 +39,10 @@
   }
 
   .btn {
-    width: 100%;
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 10px;
   }
 
 }
@@ -50,8 +53,13 @@
   color: #4E4E4E;
 }
 .product-categories__pic {
-  height: 124px;
+  overflow: hidden;
+  height: 125px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
+  border-bottom: 1px solid #DDDDDD;
 
   img {
     display: inline-block;
@@ -65,6 +73,7 @@
   @include justify-content(space-between);
   @include align-items();
   @include flex-direction();
+  @include flex-wrap(wrap);
   margin: 0 0 7px;
   padding: 0 4px;
   font-family: ProximaNova-Bold;
@@ -80,14 +89,19 @@
 
 }
 .product-categories__footer {
-  position: absolute;
-  border-top: 1px solid #DDDDDD;
   padding-top: 9px;
-  left: 9px;
-  bottom: 11px;
-  right: 9px;
 }
 
+@media (min-width: $phone-mini) {
+
+  .product-categories__inner {
+
+    >div {
+      width: 50%;
+    }
+  }
+
+}
 @media (min-width: $tablet-portrait) {
 
   .product-categories__inner {
@@ -100,7 +114,7 @@
   }
   .product-categories__item {
     max-width: 210px;
-    padding: 11px 9px 105px;
+    padding: 11px 9px 40px;
   }
 
 }
@@ -109,8 +123,6 @@
   .product-categories {
     margin: 0 0 20px;
     padding: 28px 17px 13px 26px;
-    background: #FFFFFF;
-    border-radius: 4px;
   }
   .product-categories__inner {
 
@@ -122,9 +134,14 @@
   }
   .product-categories__item {
     max-width: 294px;
-    padding: 28px 20px 73px;
+    padding: 28px 20px 64px;
 
     .btn {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      width: 100%;
       margin-top: 3px;
     }
 
@@ -136,8 +153,9 @@
   .product-categories__pic {
     overflow: hidden;
     position: relative;
-    height: 180px;
+    height: 214px;
     margin: 0 0 8px;
+    border-bottom: none;
 
     img {
       position: absolute;
@@ -149,6 +167,7 @@
 
   }
   .product-categories__footer {
+    position: absolute;
     @include flexbox();
     @include justify-content(space-between);
     @include align-items(center);
@@ -181,9 +200,6 @@
 }
 @media (min-width: $desktop-hd) {
 
-  .product-categories__pic {
-    height: 205px;
-  }
   .product-categories__price {
     font-size: 24px;
     line-height: 24px;

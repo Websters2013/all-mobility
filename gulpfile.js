@@ -33,9 +33,11 @@ var paths = {
             ]
         },
         {
-            dist: 'tabs.min.js',
+            dist: 'product.min.js',
             contains: [
-                'app/js/jquery.tabs.js'
+                'app/js/jquery.main.js',
+                'app/js/jquery.product-slider.js',
+                'app/js/jquery.websters-select.js'
             ]
         }
     ],

@@ -28,16 +28,35 @@
     background: #00c4ff;
   }
 
+  &_img-right {
+
+    svg,
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
+  }
+  &_img-left {
+
+    svg,
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 16px;
+      margin-left: -35px;
+      margin-top: -6px;
+    }
+
+  }
+
   &_2 {
     height: 40px;
     background: #0094C1;
     border-radius: 4px;
     font-family: OpenSans-Bold;
     font-size: 16px;
-
-    img {
-      margin-left: 10px;
-    }
 
   }
 
@@ -83,10 +102,6 @@
     border-radius: 4px;
     font-family: OpenSans-Bold;
     font-size: 16px;
-
-    img {
-      margin-left: 10px;
-    }
 
     &:hover {
       background: #ea5438;
